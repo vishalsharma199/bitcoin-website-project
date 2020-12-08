@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/dtt-mob.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body class="light">
+    <div class="coin-data bg-white">
+        <div class="demo DTT ">
+            <div class="details">
+                <div class="slider currency"><img class="svg" alt="DTTExchange" src="./image/DTT.png"> DTT/USD</div>
+                <div class="rate">
+                    <div class="slider price red ">0.00000000</div>
+                    <div class="percent up"></div>
+                </div>
+            </div>
+        </div>
+        <div class="demo BTC ">
+            <div class="arrow up">
+                <img src="./image/green-arrow.png">
+                <img src="./image/red-arrow.png">
+            </div>
+            <div class="details">
+                <div class="slider currency"><img class="svg" alt="DTTExchange" src="./image/BTC.png"> BTC/USD</div>
+                <div class="rate">
+                    <div class="slider price red ">10723.69</div>
+                    <div class="percent up">+0.2895%</div>
+                </div>
+            </div>
+        </div>
+        <div class="demo ETH ">
+            <div class="arrow up">
+                <img src="./image/green-arrow.png">
+                <img src="./image/red-arrow.png">
+            </div>
+            <div class="details">
+                <div class="slider currency"><img class="svg" alt="DTTExchange" src="./image/ETH.png"> ETH/USD</div>
+                <div class="rate">
+                    <div class="slider price red ">352.37</div>
+                    <div class="percent up">+1.3111%</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="dtt-trade-card eth">
+        <div class="heading-big">Buy/Sell</div>
+        <div class="head">
+            <div class="text">Your Etherium Balance:</div>
+            <div class="data">0.832<img class="svg" alt="DTTExchange" src="./image/eth-white.png"></div>
+
+        </div>
+        <form action="">
+            <input type="text" placeholder="Enter Etherium to Buy">
+            <br><label>Tokens Recieved</label>
+            <button disabled="disabled"></button>
+            <div class="btn-container">
+                <button class="btn btn-white">Buy</button>
+            </div>
+        </form>
+    </div>
+    <div class="dtt-trade-card dtt">
+
+        <div class="head">
+            <div class="text">Your DTT Balance:</div>
+            <div class="data">1400<img class="svg" alt="DTTExchange" src="./image/dtt-logo-blue.png "></div>
+
+        </div>
+        <form action="">
+            <input class="input-white" type="text" placeholder="Enter DTT to Sell">
+            <br><label>Etherium Recieved</label>
+            <button disabled="disabled"></button>
+            <div class="btn-container">
+                <button class="btn btn-blue">Buy</button>
+            </div>
+        </form>
+    </div>
+    <div class="fixed-bottom-nav">
+        <a href="#">
+            <i class="fa fa-money" aria-hidden="true"></i>
+            <div class="nav-name">Wallet</div>
+        </a>
+        <a href="./graph.html">
+            <i class="fa fa-exchange" aria-hidden="true"></i>
+            <div class="nav-name">Transaction</div>
+        </a>
+        <a href="#" class="active" style="display: flex;justify-content:center;align-items:center">
+            <i class="fa fa-usd" aria-hidden="true"></i>
+
+        </a>
+        <a href="#">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <div class="nav-name">Referal</div>
+        </a>
+        <a href="#">
+            <i class="fa fa-cog " aria-hidden="true"></i>
+            <div class="nav-name">Settings</div>
+        </a>
+    </div>
+</body>
+
+</html>

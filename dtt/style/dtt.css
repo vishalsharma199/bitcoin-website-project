@@ -1,0 +1,435 @@
+@font-face {
+  font-family: IBMPlex;
+  src: url(./font/IBMPlexSans-Regular.ttf); }
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: IBMPlex; }
+
+.html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.light {
+  background-color: #f7ffff; }
+  .light .coin-data {
+    display: flex;
+    width: 100%;
+    background-color: #f7ffff;
+    color: #3275bb;
+    justify-content: space-around;
+    padding-bottom: 2px; }
+    .light .coin-data .demo {
+      width: 30%;
+      height: 100%;
+      display: flex; }
+      .light .coin-data .demo .arrow {
+        height: 25px;
+        width: 8%;
+        margin-right: 5px;
+        margin-top: 5%; }
+        .light .coin-data .demo .arrow img {
+          height: 75%;
+          width: 100%; }
+      .light .coin-data .demo .up img:last-child {
+        display: none; }
+      .light .coin-data .demo .down img:first-child {
+        display: none; }
+      .light .coin-data .demo .up {
+        color: #32ba32; }
+      .light .coin-data .demo .down {
+        color: #f15c2e; }
+      .light .coin-data .demo .details {
+        width: 90%;
+        height: 100%; }
+        .light .coin-data .demo .details .currency {
+          display: flex;
+          font-size: 1.2em;
+          width: 100%;
+          align-items: center; }
+          .light .coin-data .demo .details .currency img {
+            width: 20px;
+            height: 20px;
+            margin-right: 2px; }
+        .light .coin-data .demo .details .rate {
+          display: flex;
+          width: 100%;
+          justify-content: space-around;
+          font-size: 1em; }
+          .light .coin-data .demo .details .rate .price {
+            font-size: 1em; }
+          .light .coin-data .demo .details .rate .percent {
+            font-size: 1em; }
+  .light .menu-bar {
+    position: fixed;
+    top: 55px;
+    right: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 10px;
+    color: #fff; }
+    .light .menu-bar i {
+      font-size: 2em; }
+  .light .brand-logo {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #3275bb;
+    color: #f7ffff; }
+    .light .brand-logo .imgbx {
+      width: 80%;
+      height: 80%; }
+      .light .brand-logo .imgbx img {
+        height: 100%;
+        width: 100%; }
+  .light .head-section {
+    width: 100%;
+    background-color: #3275bb;
+    color: #f7ffff;
+    padding-bottom: 40px;
+    margin-top: -1px; }
+    .light .head-section .head {
+      width: 100%;
+      text-align: center;
+      font-size: 2.4em;
+      font-weight: 800; }
+    .light .head-section .text {
+      width: 60%;
+      text-align: center;
+      font-size: 1.2em;
+      margin: 20px auto; }
+    .light .head-section .btn-container {
+      width: 80%;
+      height: 100px;
+      margin: auto;
+      margin-top: 100px; }
+      .light .head-section .btn-container .btn-sub {
+        display: flex;
+        width: 100%; }
+  .light .btn {
+    padding: 10px 15px;
+    display: flex;
+    border: 1px solid #f7ffff;
+    margin-bottom: 10px;
+    border-radius: 10px; }
+    .light .btn i {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .light .btn .name {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .light .text-warning {
+    color: #2fd466; }
+  .light .half-wd {
+    width: 50%; }
+  .light .full-wd {
+    width: calc(100% - 30px); }
+  .light .light_button {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3275bb;
+    color: #f7ffff;
+    background-color: #3275bb;
+    text-decoration: none; }
+  .light .gradient_button {
+    background: #1D976C;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #93F9B9, #1D976C);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7ffff;
+    text-decoration: none; }
+  .light .dtt-trend-analysis {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f7ffff;
+    color: #132359; }
+    .light .dtt-trend-analysis .head {
+      width: 100%;
+      text-align: center;
+      font-size: 2.4em;
+      font-weight: 800; }
+    .light .dtt-trend-analysis .imgbx {
+      width: 80%;
+      margin: 10px auto;
+      height: 300px; }
+      .light .dtt-trend-analysis .imgbx img {
+        height: 100%;
+        width: 100%; }
+  .light .dtt-blck-chain {
+    width: 100%;
+    background-color: #f7ffff;
+    color: #132359;
+    padding-bottom: 30px; }
+    .light .dtt-blck-chain .head {
+      width: 100%;
+      text-align: center;
+      font-size: 2.4em;
+      font-weight: 800; }
+    .light .dtt-blck-chain .text {
+      width: 80%;
+      text-align: center;
+      font-size: 1.2em;
+      margin: 20px auto; }
+    .light .dtt-blck-chain .light_button {
+      width: 25%;
+      margin: 20px auto;
+      font-size: 1.2em; }
+  .light .dtt-features {
+    width: 100%; }
+    .light .dtt-features .head {
+      width: 100%;
+      text-align: center;
+      font-size: 2.4em;
+      font-weight: 800; }
+    .light .dtt-features .text {
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+      font-size: 1.2em; }
+    .light .dtt-features .feature-bx {
+      width: 100%; }
+      .light .dtt-features .feature-bx .imgbx {
+        width: 50%;
+        height: 200px;
+        margin: 10px auto; }
+        .light .dtt-features .feature-bx .imgbx img {
+          height: 100%;
+          width: 100%; }
+      .light .dtt-features .feature-bx .head {
+        width: 100%;
+        text-align: center;
+        font-size: 1.6em;
+        font-weight: 800; }
+      .light .dtt-features .feature-bx .text {
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 1.1em; }
+  .light .dtt-whitepaper {
+    width: 100%; }
+    .light .dtt-whitepaper .head {
+      width: 100%;
+      text-align: center;
+      font-size: 2.4em;
+      font-weight: 800; }
+    .light .dtt-whitepaper i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px auto;
+      font-size: 5em;
+      color: #3275bb; }
+    .light .dtt-whitepaper .text {
+      width: 80%;
+      text-align: center;
+      font-size: 1.2em;
+      margin: 20px auto; }
+    .light .dtt-whitepaper .light_button {
+      width: 30%;
+      margin: 20px auto;
+      font-size: 1.4em; }
+  .light .dtt-roadmap {
+    width: 100%;
+    padding: 50px 0px; }
+    .light .dtt-roadmap .head {
+      width: 100%;
+      text-align: center;
+      font-size: 2.4em;
+      font-weight: 800; }
+    .light .dtt-roadmap .text {
+      width: 80%;
+      text-align: center;
+      font-size: 1.2em;
+      margin: 20px auto; }
+    .light .dtt-roadmap .roadmap-items {
+      width: 70%;
+      padding: 20px 10px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row; }
+      .light .dtt-roadmap .roadmap-items li {
+        width: 50%;
+        text-align: center;
+        position: relative;
+        list-style: none; }
+      .light .dtt-roadmap .roadmap-items li:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color: rgba(16, 154, 249, 0.5);
+        left: 0;
+        z-index: -1;
+        top: 17px; }
+      .light .dtt-roadmap .roadmap-items li:nth-child(4n+2):after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: calc(100% + 20px);
+        background-color: green;
+        top: 10px;
+        background: url(../image/rightCircleLine.png) no-repeat center right;
+        background-size: auto 100%;
+        z-index: -1;
+        right: -50px; }
+      .light .dtt-roadmap .roadmap-items li:nth-child(4n+3):after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: calc(100% + 20px);
+        background-color: green;
+        top: 10px;
+        background: url(../image/leftCircleLine.png) no-repeat center left;
+        background-size: auto 100%;
+        z-index: -1;
+        left: -50px; }
+      .light .dtt-roadmap .roadmap-items li:last-child:after {
+        content: '';
+        display: none; }
+      .light .dtt-roadmap .roadmap-items li:last-child:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 5px;
+        background-color: rgba(16, 154, 249, 0.5);
+        left: 0;
+        z-index: -1;
+        top: 17px; }
+      .light .dtt-roadmap .roadmap-items .dot {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        background: url(../image/dot.png) no-repeat center center;
+        background-size: 100%; }
+      .light .dtt-roadmap .roadmap-items .year {
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 1.125rem;
+        color: #3275bb;
+        display: block;
+        padding: 1.25rem 0 0.625rem 0; }
+    .light .dtt-roadmap .text {
+      width: 80%;
+      margin: 10px auto; }
+  .light .dtt-subscribe {
+    margin: 0px auto;
+    padding: 80px 0px;
+    background-color: #3275bb;
+    color: #f7ffff; }
+    .light .dtt-subscribe .head {
+      width: 100%;
+      text-align: center;
+      font-size: 2.4em;
+      font-weight: 800; }
+    .light .dtt-subscribe form {
+      display: flex;
+      width: fit-content;
+      margin: 20px auto; }
+    .light .dtt-subscribe input[type="text"] {
+      background-color: #ffffff;
+      color: #a6a6a6;
+      font-size: 1rem;
+      border: 0;
+      width: 80%;
+      border-radius: 50px 0 0 50px;
+      padding: 15px 10px 15px 30px;
+      max-width: 300px;
+      height: 100%;
+      margin-left: 10px; }
+    .light .dtt-subscribe input[type="submit"] {
+      padding: 20px 0;
+      width: 40%;
+      margin-left: -40px;
+      border: none;
+      max-width: 170px;
+      padding: 1rem 0;
+      font-size: 1rem;
+      height: 100%; }
+  .light .dtt-footer {
+    width: 100%;
+    background-color: #3275bb;
+    color: #f7ffff; }
+    .light .dtt-footer .footer-bx {
+      display: flex;
+      width: 95%;
+      margin: 0px auto; }
+      .light .dtt-footer .footer-bx .footer-content {
+        width: 50%; }
+        .light .dtt-footer .footer-bx .footer-content .head {
+          width: 100%;
+          font-size: 1.6em;
+          font-weight: 800; }
+        .light .dtt-footer .footer-bx .footer-content ul {
+          padding-left: 0; }
+          .light .dtt-footer .footer-bx .footer-content ul li {
+            list-style: none; }
+            .light .dtt-footer .footer-bx .footer-content ul li a {
+              text-decoration: none;
+              color: #f7ffff;
+              font-size: 1.1em; }
+  .light .copyright {
+    background-color: #3275bb;
+    color: #f7ffff;
+    text-align: center;
+    color: #fff;
+    font-size: 1em;
+    border-top: 1px solid #c5c8cc;
+    padding-top: 1.5rem;
+    padding-bottom: 80px; }
+    .light .copyright span:nth-child(1) {
+      border-right: 1px solid #ffffff; }
+    .light .copyright span {
+      padding: 0 10px; }
+  .light .fixed-btns {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.5); }
+    .light .fixed-btns .login {
+      border-radius: 0px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.6em;
+      font-weight: 700;
+      margin: 0;
+      border: none;
+      color: #3275bb; }
+    .light .fixed-btns .register {
+      border-radius: 0px;
+      background-color: #3275bb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.6em;
+      font-weight: 700;
+      margin: 0;
+      border: none;
+      color: #fff; }
+
+/*# sourceMappingURL=dtt.css.map */

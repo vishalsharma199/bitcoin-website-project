@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./login.css"> -->
+    <link rel="stylesheet" href="./style/dtt-mob.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <title>Login</title>
+</head>
+
+<body class="light login-register-bg">
+    <div class="brand-logo">
+        <div class="imgbx">
+            <img src="./image/dtt-blue.png" alt="">
+        </div>
+    </div>
+    <div class="dtt-login-pannel">
+        <div class="heading-bigger">Register</div>
+        <!-- <div class="connect-meta">Connect to Metamask</div> -->
+        <div class="connect-meta"></div>
+        <form action="">
+            <div class="form-group dtt-login-button-box">
+                <input type="text" placeholder="Enter Referal Public Key(Optional)" class="register-referal" id="dt_regref" value="">
+                <div id="no-input" style="width: 100%;font-size:1em;color:#c41313;">No Referal Link is Provided</div>
+            </div>
+        </form>
+        <div class="dtt-login-seprator"></div>
+        <div class="dtt-login-button-box">
+            <div class="dtt-btn-login-box">
+                <div class="dtt-cstm-pulse-login" id="loginMetamask"></div>
+                <button class="btn btn-blue" type="submit" tabindex="4">Connect to Wallet</button>
+            </div>
+        </div>
+        <div class="dtt-login-seprator"></div>
+        <div class="text-big">Connect to Your DApp wallet to enter the dashboard.</div>
+        <div class="text-big"><a href="https://dttexchange.com/member/login.php">Sign In</a> if you don't have an account</div>
+    </div>
+    <div class="copyright bg-white">
+        <span>© 2020</span>
+        <span>DTT Exchange</span>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $("#dt_regref").on("input", function() {
+            var input = $('#dt_regref').val();
+            console.log(input)
+            if (input != "") {
+                $("#no-input").text("");
+            } else if (input === "") {
+                $("#no-input").text("No Referal Link is Provided");
+
+            }
+
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./graph.css"> -->
+    <link rel="stylesheet" href="./style/dtt-mob.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <title>Referal</title>
+</head>
+
+<body class="light">
+    <div class="coin-data bg-blue">
+        <div class="demo DTT ">
+            <div class="details">
+                <div class="slider currency"><img class="svg" alt="DTTExchange" src="./image/DTT.png"> DTT/USD</div>
+                <div class="rate">
+                    <div class="slider price red ">0.00000000</div>
+                    <div class="percent up"></div>
+                </div>
+            </div>
+        </div>
+        <div class="demo BTC ">
+            <div class="arrow up">
+                <img src="./image/green-arrow.png">
+                <img src="./image/red-arrow.png">
+            </div>
+            <div class="details">
+                <div class="slider currency"><img class="svg" alt="DTTExchange" src="./image/BTC.png"> BTC/USD</div>
+                <div class="rate">
+                    <div class="slider price red ">10723.69</div>
+                    <div class="percent up">+0.2895%</div>
+                </div>
+            </div>
+        </div>
+        <div class="demo ETH ">
+            <div class="arrow down">
+                <img src="./image/green-arrow.png">
+                <img src="./image/red-arrow.png">
+            </div>
+            <div class="details">
+                <div class="slider currency"><img class="svg" alt="DTTExchange" src="./image/ETH.png"> ETH/USD</div>
+                <div class="rate">
+                    <div class="slider price red ">352.37</div>
+                    <div class="percent down">+1.3111%</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="dtt-ref-header">
+        <canvas id="myreflineChart" width="300" height="300"></canvas>
+    </div>
+    <div class="heading-big">My Holdings</div>
+
+    <div class="dtt-ref-header">
+        <canvas id="myrefpieChart" width="300" height="300"></canvas>
+    </div>
+    <div class="table-container">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" nowrap="">Level</th>
+                    <th scope="col" nowrap="">Number Of Users</th>
+                    <th scope="col" nowrap="">Total Holding</th>
+                    <th scope="col" nowrap="">Reward Eigibility</th>
+                    <!-- <th scope="col" class="text-center"></th> -->
+                    <!-- <th scope="col" class="text-center">Action</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Level 1 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 2 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 3 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 4 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 5 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 6 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 7 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 8 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 9 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 10 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 11 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 12 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 13 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 14 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+                <tr>
+                    <td> Level 15 </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td class="text-warning">Not Available</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="clear-fix-for-bottom-nav" style="width: 100%;height:60px;"></div>
+    <div class="fixed-bottom-nav">
+        <a href="#">
+            <i class="fa fa-money" aria-hidden="true"></i>
+            <div class="nav-name">Wallet</div>
+        </a>
+        <a href="./graph.html" class="active">
+            <i class="fa fa-exchange" aria-hidden="true"></i>
+            <div class="nav-name">Transaction</div>
+        </a>
+        <a href="./dashboard.html" style="display: flex;justify-content:center;align-items:center">
+            <i class="fa fa-usd" aria-hidden="true"></i>
+
+        </a>
+        <a href="#">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <div class="nav-name">Referal</div>
+        </a>
+        <a href="#">
+            <i class="fa fa-cog " aria-hidden="true"></i>
+            <div class="nav-name">Settings</div>
+        </a>
+    </div>
+</body>
+<script>
+    var ctx1 = document.getElementById('myreflineChart');
+    var myChart = new Chart(ctx1, {
+        type: 'line',
+        backgroundColor: 'rgba(32, 155, 199, 0.987)',
+        data: {
+            labels: ['1 Sep', '7 Sep', '14 Sep', '21 Sep', '28 Sep', '4 Oct'],
+            datasets: [{
+                label: 'My Tokens',
+                data: [1, 19, 3, 5, 2, 3],
+                backgroundColor: 'rgba(0,0,0,0)',
+                borderColor: 'rgba(32, 155, 199, 0.987)',
+                borderWidth: 1
+            }, {
+                label: 'My Referals',
+                data: [11, 19, 13, 15, 12, 13],
+                backgroundColor: 'rgba(0,0,0,0)',
+                borderColor: 'rgba(43, 236, 130, 0.898)',
+                borderWidth: 1
+            }],
+
+        },
+
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+</script>
+<script>
+    var ctx2 = document.getElementById('myrefpieChart');
+    var myChart = new Chart(ctx2, {
+        type: 'pie',
+        backgroundColor: 'rgba(32, 155, 199, 0.987)',
+        data: {
+            labels: ['BTC', 'ETH', 'DTT', 'LTC', 'DASH', 'XRP'],
+            datasets: [{
+                label: 'My Tokens',
+                data: [1, 19, 3, 5, 2, 3],
+                backgroundColor: ['rgb(96, 163, 230)', 'rgb(105, 163, 221)', 'rgb(123, 163, 202)', 'rgb(151, 163, 175)', 'rgba(151, 163, 175, 0.6)', 'rgba(151, 163, 175, 0.4)'],
+                borderColor: '',
+                borderWidth: 1
+            }, ],
+
+        },
+
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+</script>
+
+</html>

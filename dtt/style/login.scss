@@ -1,0 +1,126 @@
+  //colors
+  $blue:#132359;
+  $white:#f7ffff;
+  $light-blue:#3275bb;
+  $green:#2fd466;
+  @font-face {
+      font-family: IBMPlex;
+      src: url(./font/IBMPlexSans-Regular.ttf);
+  }
+  
+  body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: IBMPlex;
+      max-width: 767px;
+  }
+  
+  .html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .light {
+      background-color: #f7ffff;
+      background-image: url(./image/Roadmap-grid.png);
+      .brand-logo {
+          width: 100%;
+          height: 170px;
+          display: flex;
+          justify-content: center;
+          color: $white;
+          max-width: 370px;
+          margin: 10px auto;
+          .imgbx {
+              width: 80%;
+              height: 80%;
+              img {
+                  height: 100%;
+                  width: 100%;
+              }
+          }
+      }
+      .dtt-login-pannel {
+          width: 100%;
+          padding: 30px 10px;
+          border-radius: 20px;
+          .login-header {
+              text-align: center;
+              width: 100%;
+              font-size: 3em;
+              font-weight: 800;
+              color: $light-blue;
+          }
+          .dtt-login-button-box {
+              text-align: center;
+              width: 100%;
+              margin-top: 2%;
+              margin-bottom: 30px;
+              .register-referal {
+                  border: 1px solid #0062cc;
+                  background: transparent;
+                  padding: 15px 5px;
+                  color: rgb(51, 48, 48);
+                  border-radius: 20px;
+                  width: 75%;
+                  outline: none;
+              }
+              .dtt-btn-login-box {
+                  position: relative;
+                  width: 70%;
+                  margin: 0px auto;
+                  .dtt-cstm-pulse-login {
+                      border: 1px solid #3274bb77 !important;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      animation: pulse-cstm 1.8s infinite ease-out;
+                  }
+                  button {
+                      cursor: pointer;
+                      background-color: $light-blue;
+                      color: #fff;
+                      font-size: 1.8em;
+                      border: none;
+                      border-radius: 20px;
+                      width: 100%;
+                      padding: 10px 10px;
+                      transition: 0.8s;
+                      font-weight: 600;
+                  }
+              }
+          }
+          .dtt-login-some-text {
+              text-align: center;
+              width: 100%;
+              margin-top: 2%;
+              font-size: 1.4em;
+              margin-top: 20px;
+          }
+          .dtt-login-some-text a {
+              color: #13c471;
+              text-decoration: none;
+          }
+      }
+  }
+  
+  @keyframes pulse-cstm {
+      0% {
+          border: 1px solid rgba(255, 255, 255, 1);
+          border-radius: 20px;
+          height: 100%;
+          width: 100%;
+      }
+      100% {
+          border: 1px solid rgba(255, 255, 255, 0);
+          border-radius: 20px;
+          height: 130%;
+          width: 130%;
+          top: -15%;
+          left: -15%;
+      }
+  }

@@ -1,0 +1,178 @@
+  //colors
+  $blue:#132359;
+  $white:#f7ffff;
+  $light-blue:#3275bb;
+  @font-face {
+      font-family: IBMPlex;
+      src: url(./font/IBMPlexSans-Regular.ttf);
+  }
+  
+  body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: IBMPlex;
+  }
+  
+  .html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .light {
+      background-color: $white;
+      color: $light-blue;
+      .coin-data {
+          display: flex;
+          width: 100%;
+          background-color: $white;
+          color: $light-blue;
+          justify-content: space-around;
+          padding-bottom: 2px;
+          .demo {
+              width: 30%;
+              height: 100%;
+              display: flex;
+              .arrow {
+                  height: 30px;
+                  width: 8%;
+                  margin-right: 5px;
+                  margin-top: 5%;
+                  img {
+                      height: 75%;
+                      width: 100%;
+                  }
+              }
+              .up img:last-child {
+                  display: none;
+              }
+              .down img:first-child {
+                  display: none;
+              }
+              .up {
+                  color: #32ba32;
+              }
+              .down {
+                  color: #f15c2e;
+              }
+              .details {
+                  width: 90%;
+                  height: 100%;
+                  .currency {
+                      display: flex;
+                      font-size: 1.2em;
+                      width: 100%;
+                      align-items: center;
+                      img {
+                          width: 15px;
+                          height: 15px;
+                          margin-right: 2px;
+                      }
+                  }
+                  .rate {
+                      display: flex;
+                      width: 100%;
+                      justify-content: space-around;
+                      font-size: 1em;
+                      .price {
+                          font-size: 1em;
+                      }
+                      .percent {
+                          font-size: 1em;
+                      }
+                  }
+              }
+          }
+      }
+      .dtt-trade-head {
+          font-size: 2em;
+          width: 100%;
+          text-align: center;
+          font-weight: 800;
+      }
+      .dtt-trade-eth-card {
+          width: 100%;
+          padding: 30px 0px;
+          .head {
+              width: 90%;
+              display: flex;
+              justify-content: space-between;
+              margin: 10px auto;
+              .text {
+                  font-size: 1.2em;
+              }
+              .data {
+                  display: flex;
+                  font-size: 1.1em;
+                  img {
+                      height: 25px;
+                      width: 30px;
+                  }
+              }
+          }
+          form {
+              width: 80%;
+              margin: 10px auto;
+              input {
+                  width: 100%;
+                  border: 1px solid #3274bb74;
+                  outline: none;
+                  color: #626a6a;
+                  border-radius: 10px;
+                  padding: 15px 10px;
+              }
+              .btn-container {
+                  width: 100%;
+                  display: flex;
+                  justify-content: flex-end;
+                  button {
+                      margin-right: 10px;
+                      background-color: $white;
+                      color: $light-blue;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      padding: 5px 10px;
+                      border: 1px solid $light-blue;
+                      border-radius: 10px;
+                      font-size: 1.4em;
+                  }
+              }
+          }
+      }
+      .fixed-bottom-nav {
+          width: 100%;
+          display: flex;
+          position: fixed;
+          bottom: 0px;
+          left: 0;
+          height: 50px;
+          padding: 10px 0px;
+          background-color: $white;
+          box-shadow: -5px -5px 20px rgba($color: #000000, $alpha: 0.3);
+          a {
+              color: #3274bb2c;
+              text-decoration: none;
+              color: #8c8484;
+              width: 20%;
+              display: block;
+              height: 100%;
+              i {
+                  width: 100%;
+                  text-align: center;
+                  font-size: 1.4em;
+              }
+              .nav-name {
+                  width: 100%;
+                  text-align: center;
+              }
+          }
+          a:hover,
+          .active {
+              color: #132359;
+          }
+      }
+  }

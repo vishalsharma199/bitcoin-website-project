@@ -1,0 +1,23 @@
+    //colors
+    $blue:#132359;
+    $white:#f7ffff;
+    $light-blue:#3275bb;
+    @font-face {
+        font-family: IBMPlex;
+        src: url(./font/IBMPlexSans-Regular.ttf);
+    }
+    
+    body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: IBMPlex;
+    }
+    
+    .html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }

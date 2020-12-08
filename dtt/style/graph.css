@@ -1,0 +1,177 @@
+@font-face {
+  font-family: IBMPlex;
+  src: url(./font/IBMPlexSans-Regular.ttf); }
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: IBMPlex; }
+
+.html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.light_button {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #3275bb;
+  color: #f7ffff;
+  background-color: #3275bb;
+  text-decoration: none; }
+
+.light {
+  background-color: #f7ffff;
+  color: #3275bb; }
+  .light .coin-data {
+    display: flex;
+    width: 100%;
+    background-color: #3275bb;
+    color: #f7ffff;
+    justify-content: space-around;
+    padding-bottom: 2px; }
+    .light .coin-data .demo {
+      width: 30%;
+      height: 100%;
+      display: flex; }
+      .light .coin-data .demo .arrow {
+        height: 30px;
+        width: 8%;
+        margin-right: 5px;
+        margin-top: 5%; }
+        .light .coin-data .demo .arrow img {
+          height: 75%;
+          width: 100%; }
+      .light .coin-data .demo .up img:last-child {
+        display: none; }
+      .light .coin-data .demo .down img:first-child {
+        display: none; }
+      .light .coin-data .demo .up {
+        color: #32dd32; }
+      .light .coin-data .demo .down {
+        color: #fa9a8d; }
+      .light .coin-data .demo .details {
+        width: 90%;
+        height: 100%; }
+        .light .coin-data .demo .details .currency {
+          display: flex;
+          font-size: 1.2em;
+          width: 100%;
+          align-items: center; }
+          .light .coin-data .demo .details .currency img {
+            width: 20px;
+            height: 20px;
+            margin-right: 4px; }
+        .light .coin-data .demo .details .rate {
+          display: flex;
+          width: 100%;
+          justify-content: space-around;
+          font-size: 1em; }
+          .light .coin-data .demo .details .rate .price {
+            font-size: 1em; }
+          .light .coin-data .demo .details .rate .percent {
+            font-size: 1em; }
+  .light .dtt-graph-header {
+    width: 100%;
+    background-color: #3275bb;
+    color: #132359; }
+    .light .dtt-graph-header #myChart,
+    .light .dtt-graph-header #myrefpieChart,
+    .light .dtt-graph-header #myreflineChart {
+      background-color: #f7ffff;
+      color: #eec935; }
+  .light .dtt-mob-cards {
+    width: 90%;
+    margin: 30px auto; }
+    .light .dtt-mob-cards .patle-cards {
+      color: #132359;
+      width: 100%;
+      font-size: 1.4em;
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+      font-weight: 800; }
+      .light .dtt-mob-cards .patle-cards .light_button {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 2px 10px;
+        margin-right: 10px; }
+      .light .dtt-mob-cards .patle-cards .buy {
+        color: #f7ffff;
+        background-color: #3275bb; }
+      .light .dtt-mob-cards .patle-cards .sell {
+        color: #3275bb;
+        background-color: #f7ffff;
+        border: 1px solid #3275bb; }
+      .light .dtt-mob-cards .patle-cards .data {
+        font-size: 1.3;
+        margin-left: auto;
+        color: #756d6d; }
+    .light .dtt-mob-cards div:nth-child(even) {
+      color: #a1c9f3; }
+  .light .fixed-bottom-nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    height: 50px;
+    padding: 10px 0px;
+    background-color: #f7ffff;
+    box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.3); }
+    .light .fixed-bottom-nav a {
+      text-decoration: none;
+      color: #8c8484;
+      width: 20%;
+      display: block;
+      height: 100%; }
+      .light .fixed-bottom-nav a i {
+        width: 100%;
+        text-align: center;
+        font-size: 1.4em; }
+      .light .fixed-bottom-nav a .nav-name {
+        width: 100%;
+        text-align: center; }
+    .light .fixed-bottom-nav a:hover,
+    .light .fixed-bottom-nav .active {
+      color: #132359; }
+
+.table-container {
+  width: 100%;
+  margin-top: 20px;
+  overflow: scroll; }
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem; }
+
+.table:not(.table-sm):not(.table-md):not(.dataTable) td,
+.table:not(.table-sm):not(.table-md):not(.dataTable) th {
+  padding: 0 15px;
+  height: 60px;
+  vertical-align: middle; }
+  .table:not(.table-sm):not(.table-md):not(.dataTable) td a,
+  .table:not(.table-sm):not(.table-md):not(.dataTable) th a {
+    text-decoration: none;
+    color: inherit; }
+
+.table:not(.table-sm) thead th {
+  border-bottom: none;
+  background-color: #3275bb;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f7ffff;
+  color: #3275bb !important; }
+
+.table-striped tbody tr:nth-of-type(even) {
+  color: #f7ffff !important;
+  background-color: #3274bba3; }
+
+/*# sourceMappingURL=graph.css.map */

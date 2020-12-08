@@ -1,0 +1,209 @@
+@font-face {
+  font-family: IBMPlex;
+  src: url(./font/IBMPlexSans-Regular.ttf); }
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: IBMPlex; }
+
+.html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.light {
+  background-color: #f7ffff;
+  color: #3275bb; }
+  .light .coin-data {
+    display: flex;
+    width: 100%;
+    background-color: #f7ffff;
+    color: #132359;
+    justify-content: space-around;
+    padding-bottom: 2px; }
+    .light .coin-data .demo {
+      width: 30%;
+      height: 100%;
+      display: flex; }
+      .light .coin-data .demo .arrow {
+        height: 30px;
+        width: 8%;
+        margin-right: 5px;
+        margin-top: 5%; }
+        .light .coin-data .demo .arrow img {
+          height: 75%;
+          width: 100%; }
+      .light .coin-data .demo .up img:last-child {
+        display: none; }
+      .light .coin-data .demo .down img:first-child {
+        display: none; }
+      .light .coin-data .demo .up {
+        color: #32dd32; }
+      .light .coin-data .demo .down {
+        color: #fa9a8d; }
+      .light .coin-data .demo .details {
+        width: 90%;
+        height: 100%; }
+        .light .coin-data .demo .details .currency {
+          display: flex;
+          font-size: 1.2em;
+          width: 100%;
+          align-items: center; }
+          .light .coin-data .demo .details .currency img {
+            width: 20px;
+            height: 20px;
+            margin-right: 4px; }
+        .light .coin-data .demo .details .rate {
+          display: flex;
+          width: 100%;
+          justify-content: space-around;
+          font-size: 1em; }
+          .light .coin-data .demo .details .rate .price {
+            font-size: 1em; }
+          .light .coin-data .demo .details .rate .percent {
+            font-size: 1em; }
+  .light .dtt-mob-header-stake {
+    width: 100%;
+    height: 250px;
+    background-color: #3275bb;
+    color: #f7ffff; }
+    .light .dtt-mob-header-stake .stake-cards {
+      width: 100%;
+      height: 100%; }
+      .light .dtt-mob-header-stake .stake-cards .slick-prev {
+        left: 5px;
+        z-index: 1; }
+      .light .dtt-mob-header-stake .stake-cards .slick-next {
+        right: 25px; }
+      .light .dtt-mob-header-stake .stake-cards .slick-prev:before,
+      .light .dtt-mob-header-stake .stake-cards .slick-next:before {
+        font-size: 40px; }
+    .light .dtt-mob-header-stake .stake-card {
+      width: 100%;
+      height: 100%;
+      padding: 40px 0px;
+      position: relative; }
+      .light .dtt-mob-header-stake .stake-card .head {
+        font-size: 2em;
+        font-weight: 800;
+        width: 100%;
+        text-align: center; }
+      .light .dtt-mob-header-stake .stake-card .time-lapse {
+        font-size: 1.6em;
+        font-weight: 800;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px; }
+      .light .dtt-mob-header-stake .stake-card .btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; }
+        .light .dtt-mob-header-stake .stake-card .btn-container a {
+          width: 25%;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          font-size: 1.2em;
+          margin-right: 10px;
+          background-color: #f7ffff;
+          border-radius: 10px; }
+          .light .dtt-mob-header-stake .stake-card .btn-container a .ico {
+            width: 20%;
+            margin: 0px auto;
+            margin-left: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .light .dtt-mob-header-stake .stake-card .btn-container a .ico i {
+              color: #3275bb;
+              font-size: 2em; }
+          .light .dtt-mob-header-stake .stake-card .btn-container a .text {
+            width: 80%;
+            text-align: center;
+            color: #3275bb; }
+  .light form {
+    width: 70%;
+    padding: 10px 15%; }
+    .light form .tag {
+      width: 80%;
+      font-size: 1.4em;
+      margin-left: 5px;
+      color: #3275bb; }
+    .light form input,
+    .light form select,
+    .light form option {
+      width: calc(100% - 20px);
+      height: 30px;
+      padding: 5px 10px;
+      border: 1px solid #3275bb;
+      color: #8d9292;
+      border-radius: 5px;
+      outline: none;
+      background-color: #3274bb17;
+      margin: 0px auto;
+      font-size: 1em; }
+    .light form select {
+      height: 43px;
+      width: 100%; }
+    .light form option {
+      width: 80%;
+      font-size: 0.9em; }
+    .light form .btn-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px; }
+      .light form .btn-container button {
+        text-decoration: none;
+        color: #f7ffff;
+        border: 1px solid #3275bb;
+        background-color: #3275bb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px;
+        font-size: 1.4em;
+        border-radius: 10px;
+        margin-right: 10px; }
+  .light .stake-features {
+    width: 55%;
+    margin: 10px auto; }
+    .light .stake-features li {
+      list-style: none;
+      color: #3275bb;
+      font-size: 1.2em; }
+      .light .stake-features li i {
+        font-size: 1.2em;
+        color: #1abd84; }
+  .light .fixed-bottom-nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    height: 50px;
+    padding: 10px 0px;
+    background-color: #f7ffff;
+    box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.3); }
+    .light .fixed-bottom-nav a {
+      text-decoration: none;
+      color: #8c8484;
+      width: 20%;
+      display: block;
+      height: 100%; }
+      .light .fixed-bottom-nav a i {
+        width: 100%;
+        text-align: center;
+        font-size: 1.4em; }
+      .light .fixed-bottom-nav a .nav-name {
+        width: 100%;
+        text-align: center; }
+    .light .fixed-bottom-nav a:hover,
+    .light .fixed-bottom-nav .active {
+      color: #132359; }
+
+/*# sourceMappingURL=stake.css.map */
